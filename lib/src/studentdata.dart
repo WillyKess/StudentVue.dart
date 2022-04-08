@@ -1,5 +1,5 @@
 class StudentData {
-  String lockerInfo,
+  String? lockerInfo,
       formattedName,
       permId,
       gender,

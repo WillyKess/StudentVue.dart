@@ -1,5 +1,5 @@
 class ZipCodeResult {
-  String districtName, districtUrl;
+  String? districtName, districtUrl;
 
   ZipCodeResult({this.districtName, this.districtUrl});
 

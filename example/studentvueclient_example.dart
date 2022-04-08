@@ -2,8 +2,7 @@ import 'package:studentvueclient/studentvueclient.dart';
 
 void main() async {
   var client = StudentVueClient(
-      'my username', 'my password', 'my studentvue mobile app url',
-      mock: true);
+      'my username', 'my password', 'my studentvue mobile app url', true, true);
   print('loading data');
   var grades = await client.loadGradebook();
   print(grades.toString());

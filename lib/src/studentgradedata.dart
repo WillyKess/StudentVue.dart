@@ -1,8 +1,8 @@
 class StudentGradeData {
-  List<SchoolClass> classes;
-  String studentName;
+  List<SchoolClass>? classes;
+  String? studentName;
 
-  String error;
+  String? error;
 
   StudentGradeData({this.classes, this.studentName});
 
@@ -13,17 +13,17 @@ class StudentGradeData {
 }
 
 class SchoolClass {
-  String className,
+  String? className,
       classTeacher,
       classTeacherEmail,
       markingPeriod,
       roomNumber,
       pctGrade,
       letterGrade;
-  double earnedPoints, possiblePoints;
-  int period;
-  List<AssignmentCategory> assignmentCategories;
-  List<Assignment> assignments;
+  double? earnedPoints, possiblePoints;
+  int? period;
+  List<AssignmentCategory>? assignmentCategories;
+  List<Assignment>? assignments;
 
   SchoolClass(
       {this.className,
@@ -43,9 +43,9 @@ class SchoolClass {
 }
 
 class Assignment {
-  String assignmentName, date, category, notes;
+  String? assignmentName, date, category, notes;
   // earn points = -1 means grade not added
-  double earnedPoints, possiblePoints;
+  double? earnedPoints, possiblePoints;
 
   Assignment(
       {this.assignmentName,
@@ -61,10 +61,10 @@ class Assignment {
 }
 
 class AssignmentCategory {
-  double earnedPoints;
-  double possiblePoints;
-  double weight;
-  String name;
+  double? earnedPoints;
+  double? possiblePoints;
+  double? weight;
+  String? name;
 
   AssignmentCategory({this.name, this.weight});
 
